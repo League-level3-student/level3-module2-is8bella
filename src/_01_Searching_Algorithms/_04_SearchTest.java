@@ -32,7 +32,16 @@ class _04_SearchTest {
 		//2. use the assertEquals method to test your binary search method.
 		//   remember that the array must be sorted
 		int[] a = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-		//assertEquals(, _01_BinarySearch.binarySearch(a, 1, 10, 5));
+		int a1 = 5;
+		assertEquals(4, _01_BinarySearch.binarySearch(a, 0, 9, a1));
+		
+		int[] b = new int[] {2, 4, 6, 8, 10, 12};
+		int b1 = 1;
+		assertEquals(-1, _01_BinarySearch.binarySearch(b, 0, 5, b1));
+		
+		int[] c = new int[] {1, 3, 5, 7};
+		int c1 = 3;
+		assertEquals(1, _01_BinarySearch.binarySearch(c, 0, 3, c1));
 	}
 	
 	@Test
@@ -43,7 +52,7 @@ class _04_SearchTest {
 		int a1 = 7;
 		assertEquals(6, _02_InterpolationSearch.interpolationSearch(a, a1));
 		
-		int[] b = new int[] {2, 4, 6, 8, 10, 12 ,14};
+		int[] b = new int[] {2, 4, 6, 8, 10, 12, 14, 16};
 		int b1 = 2;
 		assertEquals(2, _02_InterpolationSearch.interpolationSearch(a, a1));
 		
