@@ -30,8 +30,9 @@ public class _01_BinarySearch {
         		//6. return the value returned from a call to the binarySearch
         		//   method. Use mid + 1 as the start, and pass in end.
 		if (end >= start) {
-			int mid = start/end;
+			int mid = start+end/2;
 			if (array[mid] == value) {
+				//System.out.println("mid value of array is equal to value");
 				return mid;
 			}
 			else if (array[mid] > value) {

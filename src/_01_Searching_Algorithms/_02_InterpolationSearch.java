@@ -27,16 +27,19 @@ public class _02_InterpolationSearch {
 			//4. create an integer called position
         	//  initialize it to the following:
         	int position = start + (((end - start) / (array[end] - array[start])) * (value - array[start]));
+        	System.out.println("position: " + position);
         	//  This calculates the center of the array keeping the even distribution in mind.
             //5. if the array element at position is equal to the value,
             //   then we found it and can return position.
         	if (array[position] == value) {
+        			System.out.println("position = value");
 				return position;
 			}
       
             //6. if the array element at position is less than value,
             //   then set start equal to position plus one
         	if (array[position] < value) {
+        			System.out.println("position < value");
 				start = position + 1; 
 			}
             

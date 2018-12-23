@@ -52,13 +52,13 @@ class _04_SearchTest {
 		int a1 = 7;
 		assertEquals(6, _02_InterpolationSearch.interpolationSearch(a, a1));
 		
-		int[] b = new int[] {2, 4, 6, 8, 10, 12, 14, 16};
-		int b1 = 2;
-		assertEquals(2, _02_InterpolationSearch.interpolationSearch(a, a1));
+		int[] b = new int[] {1,2,3};
+		int b1 = 1;
+		assertEquals(0, _02_InterpolationSearch.interpolationSearch(b, b1));
 		
 		int[] c = new int[] {3, 4, 5, 6, 7, 8};
 		int c1 = 10;
-		assertEquals(-1, _02_InterpolationSearch.interpolationSearch(a, a1));
+		assertEquals(-1, _02_InterpolationSearch.interpolationSearch(c, c1));
 	}
 	
 	@Test
@@ -69,9 +69,9 @@ class _04_SearchTest {
 		int a1 = 0;
 		assertEquals(0, _03_ExponentialSearch.exponentialSearch(a, a1));
 		
-		int[] b = new int[] {2, 4, 6, 8, 10, 12, 14};
-		int b1 = 6;
-		assertEquals(2, _03_ExponentialSearch.exponentialSearch(b, b1));
+		int[] b = new int[] {16, 17};
+		int b1 = 17;
+		assertEquals(1, _03_ExponentialSearch.exponentialSearch(b, b1));
 	
 		/*int[] c = new int[] {1, 2, 3, 4, 5, 6, 7};
 		int c1 = 5;
